@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
 
-    <changeSet author="tim" id="demo_app_v1" runWith="sqlplus">
+    <changeSet author="tim" id="demo_app_v1" runOnChange="true" runWith="sqlplus">
       <sqlFile dbms="oracle"
                path="../scripts/demo_app_f101.sql"
                relativeToChangelogFile="true"/>
